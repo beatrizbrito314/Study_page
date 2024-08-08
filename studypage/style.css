@@ -1,3 +1,35 @@
+
+@media (max-width: 768px) {
+    .to_do {
+        padding: 30px 20px 50px;
+    }
+    .row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .row input {
+        width: calc(100% - 28px);
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    .row button {
+        width: 10%;
+    }
+}
+
+@media (max-width: 480px) {
+    .to_do {
+        margin: 20px auto;
+        padding: 20px 15px 40px;
+    }
+    .row {
+        padding-left: 0;
+    }
+    .row input {
+        padding: 10px;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +41,9 @@
     min-height: 100vh;
     background: linear-gradient(210deg, #0a131f, #1b4040);
     padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .to_do {
     width: 100%;
@@ -108,34 +143,33 @@ ul li span:hover {
     background: #929292;
     border-radius: 50px;
 }
-
-@media (max-width: 768px) {
-    .to_do {
-        padding: 30px 20px 50px;
-    }
-    .row {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .row input {
-        width: calc(100% - 28px);
-        margin-right: 0;
-        margin-bottom: 10px;
-    }
-    .row button {
-        width: 10%;
-    }
+.calculator{
+    background-color: #131414;
+    padding: 20px;
+    border-radius: 20px;
 }
+.calculator form  input{
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 7px;
+    margin: 3px;
+    background-color: #131414;
+    color: beige;
+    font-size: 22px;
+}
+form .tela input{
+    display: flex;
+    background-color: antiquewhite;
+    width: 100%;
+    border-radius: 10px;
+    color: #0c0b0b;
+    text-align: right;
+}
+form input.igual{
+width: 140px;
 
-@media (max-width: 480px) {
-    .to_do {
-        margin: 20px auto;
-        padding: 20px 15px 40px;
-    }
-    .row {
-        padding-left: 0;
-    }
-    .row input {
-        padding: 10px;
-    }
+
+
 }
